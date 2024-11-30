@@ -114,7 +114,7 @@ $message = "Saya ingin membeli produk berikut:\n" . $cart_items . "\nTotal Pembe
     <p>Total: Rp <?= number_format($total, 0, ',', '.') ?></p>
 
     <!-- Link untuk checkout via WhatsApp dengan pesan dinamis -->
-    <a href="https://wa.me/+6281280760582?text=<?= urlencode($message) ?>" class="checkout">Beli via WhatsApp</a>
+    <a href="https://wa.me/?text=<?= urlencode($message) ?>" class="checkout">Beli via WhatsApp</a>
 
 </body>
 </html>
